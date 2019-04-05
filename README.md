@@ -49,20 +49,18 @@ As shown below, predicting travelling with specific merchant is extremely imbala
 <img src="Images/imbalanced.png" width="1000" />
 -----
 
-## Presented by 
+## Presented by ATB Datathon Team 3:
 
-### ATB Datathon Team 3
+#### Petrina Akor, Administration,
 
-#### Petrina Akor, Administration 
-
-#### Arenna Bu, Business Consulting
-
-#### Muhan Guna, Data Visulization
-
-#### Yingkai He, Predictive Modelling 
-
-#### Virina Mekhail, Data Engineering
+#### Arenna Bu, Business Consulting,
 
 #### Nooshin Dehghanian, Quality Control
 
-##  ---THANK YOU---
+#### Muhan Guna, Data Visulization,
+
+#### Yingkai He, Modelling,
+
+#### Virina Mekhail, Data Engineering.
+
+<img src="Images/thank_you.jpg" width="1000" />
