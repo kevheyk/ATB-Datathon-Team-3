@@ -46,7 +46,7 @@ As shown below, predicting travelling with specific merchant is extremely imbala
 ### Flight Popularity in Canada
 <img src="Images/airline_heat_map.png" width="600" />
 
-<img src="Images/imbalanced.png" width="500" />
+<img src="Images/wj_dist.png" width="500" />
 
 ## Presented by ATB Datathon Team 3:
 
