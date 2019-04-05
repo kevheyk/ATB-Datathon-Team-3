@@ -6,6 +6,7 @@ The project was a case competition solution presented by the Team 3, for ATB Dat
 
 ## Problem Statement
 The dual mandate of improving customer experience and banking revenue require tailor marketing of right product, to right customer and in right time. The "Travel Rewards Mastercard Predictive Marketing" model aims to predict travelling customer in the next month, and the ariline to use, based on previous credit card transaction behaviors. The bank can therefore make each Travel Rewards Mastercard offer tailored to the customer with **specified airline and timeframe for extra points**. 
+
 <img src="Images/travel_reward.png" width="500" />
 
 ## Data
@@ -45,21 +46,20 @@ As shown below, predicting travelling with specific merchant is extremely imbala
 ### Flight Popularity in Canada
 <img src="Images/airline_heat_map.png" width="500" />
 
-### Extremely Imbalanced Labelling
 <img src="Images/imbalanced.png" width="500" />
 
 ## Presented by ATB Datathon Team 3:
 
-#### Petrina Akor, Administration,
+### Petrina Akor, Administration,
 
-#### Arenna Bu, Business Consulting,
+### Arenna Bu, Business Consulting,
 
-#### Nooshin Dehghanian, Quality Control
+### Nooshin Dehghanian, Quality Control
 
-#### Muhan Guna, Data Visulization,
+### Muhan Guna, Data Visulization,
 
-#### Yingkai He, Modelling,
+### Yingkai He, Modelling,
 
-#### Virina Mekhail, Data Engineering.
+### Virina Mekhail, Data Engineering.
 
 <img src="Images/thank_you.jpg" width="500" />
