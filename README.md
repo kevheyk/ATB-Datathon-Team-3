@@ -44,22 +44,22 @@ Due to the high-dimentional sparse features, we start Logistic Regression to tes
 As shown below, predicting travelling with specific merchant is extremely imbalanced classification task. We do not continue with company-level prediction due to limited samples, computing resources and only 48 hours of time. The good news is, we design "Travel Rewards Mastercard Predictive Marketing" model in such way to allow the model to scale with input data, and has to flexibility to switch prediction of interest easily. For example, including "Day of Month" or "Hour of Day" into time cycles will contribute to additional 10,000+ features each. 
 
 ### Flight Popularity in Canada
-<img src="Images/airline_heat_map.png" width="500" />
+<img src="Images/airline_heat_map.png" width="600" />
 
 <img src="Images/imbalanced.png" width="500" />
 
 ## Presented by ATB Datathon Team 3:
 
-### Petrina Akor, Administration,
+### Petrina Akor, *Administration*,
 
-### Arenna Bu, Business Consulting,
+### Arenna Bu, *Business Consulting*,
 
-### Nooshin Dehghanian, Quality Control
+### Nooshin Dehghanian, *Quality Control*
 
-### Muhan Guna, Data Visulization,
+### Muhan Guna, *Data Visulization*,
 
-### Yingkai He, Modelling,
+### Yingkai He, *Modelling*,
 
-### Virina Mekhail, Data Engineering.
+### Virina Mekhail, *Data Engineering*.
 
 <img src="Images/thank_you.jpg" width="500" />
