@@ -46,13 +46,23 @@ As shown below, predicting travelling with specific merchant is extremely imbala
 <img src="Images/airline_heat_map.png" width="1000" />
 
 ### Extremely Imbalanced Labelling
-<img src="Images/airline_heat_map.png" width="1000" />
+<img src="Images/imbalanced.png" width="1000" />
 -----
+
 ## Presented by 
+
 ### ATB Datathon Team 3
+
 #### Petrina Akor, Administration 
+
 #### Arenna Bu, Business Consulting
+
 #### Muhan Guna, Data Visulization
+
 #### Yingkai He, Predictive Modelling 
+
 #### Virina Mekhail, Data Engineering
+
 #### Nooshin Dehghanian, Quality Control
+
+##  ---THANK YOU---
