@@ -5,7 +5,7 @@ The project was a case competition solution presented by the Team 3, for ATB Dat
 <img src="Images/overall_framework.png" width="1000" />
 
 ## Problem Statement
-The dual mandate of improving customer experience and banking revenue require tailor marketing of right product, to right customer and in right time. The "Travel Rewards Mastercard Predictive Marketing" model aims to predict travelling customer in the next month, and the ariline to use, based on previous credit card transaction behaviors. The bank can therefore make each Travel Rewards Mastercard offer tailored to the customer, airline transaction and timeframe. 
+The dual mandate of improving customer experience and banking revenue require tailor marketing of right product, to right customer and in right time. The "Travel Rewards Mastercard Predictive Marketing" model aims to predict travelling customer in the next month, and the ariline to use, based on previous credit card transaction behaviors. The bank can therefore make each Travel Rewards Mastercard offer tailored to the customer with **specified airline and timeframe for extra points**. 
 <img src="Images/travel_reward.png" width="500" />
 
 ## Data
@@ -17,8 +17,18 @@ The Transaction table include 137,794 records with date, time, account ID, amoun
 To impute missing values, normalize and merge datasets as needed.
 <img src="Images/relations.png" width="1000" />
 
+## Prediction Engineering
+As the first iteration, we encode the customers who make travelling spending (hotels or airlines) in March, as travelling customers. In future iterations, we can encode the customers who spends on specific airline or hotel company in March.
+<img src="Images/travel_dist.png" width="500" />
+
 ## Feature Engineering
-The idea is to  group transctions by customer, and find possible combinations of "Recency, Frequncy, Monetary", time cycles (Day of Week, Weekend or Weekdays, etc), and category groups. This is achieved by 3 levels of extraction stages. First level is to simply calculate the spending sum, mean, std, etc over Jan and Feb, plus the most recent amount and the days past. Second level is to repeat the first level once sub-grouped by categories, and once sub-grouped by time cycles. The third level is to repeat the first level, sub-grouped by time cycle AND categories. Before feature engineering, each transaction has only 6 feature, while after merging all levels together, we have 7754 features (sparse) for each customer. 
+The idea is to  group transctions by customer, and find possible combinations of **"Recency, Frequncy, Monetary"**, **time cycles** (Day of Week, Weekend or Weekdays, etc), and **category groups**. This is achieved by **3 levels of extraction stages**. First level is to simply calculate the spending sum, mean, std, etc over Jan and Feb, plus the most recent amount and the days past. Second level is to repeat the first level once sub-grouped by categories, and once sub-grouped by time cycles. The third level is to repeat the first level, sub-grouped by time cycle AND categories. **Starting with only 6 columns per transaction, now we have 7754 features (sparse) for each customer.**
 Noted that we originally have 365 merchant categories, with top 20% categories represent 90% transactions. So, we keep the categories with high occurances, while furthur group the cateogories with less than 0.2% occurence with CitiGroup's standard MCC Grouping. By doing so, we reduce the categories from 365 to 120. 
 ### Citigroup's MCC Grouping
 <img src="Images/mcg_shot.png" width="1000" />
+
+## Machine Learing Modelling
+Due to the high-dimentional sparse features, we start Logistic Regression to test the outcomes of previous steps. And we use Pipelines and Grid Search to fit, cross-validate and tune **Logistic Regression, Decision Tree and Random Forest Classifier** on scaled trainining dataset. Due to the **imbanlanced** class distribution, we focus on **AUC Score**, which reflect the model's performance to differentiate positive v.s. negative class. 
+### Model Performances with Normalized Confusion Matrix
+<img src="Images/confusion_matrices.png" width="1000" />
+
