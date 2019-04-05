@@ -37,7 +37,6 @@ Due to the high-dimentional sparse features, we start Logistic Regression to tes
 ### Sample Decision Tree, First 2 Levels
 <img src="Images/decision_visual.png" width="1000" />
 
-### Feature Importances From Decision Tree
 <img src="Images/feature_importances.png" width="1000" />
 
 ### Future Iterations
@@ -62,4 +61,5 @@ As shown below, predicting travelling with specific merchant is extremely imbala
 
 ### Virina Mekhail -- Data Engineering.
 
+-----------
 <img src="Images/thank_you.jpg" width="300" />
