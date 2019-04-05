@@ -24,7 +24,7 @@ As the first iteration, we encode the customers who make travelling spending (ho
 <img src="Images/travel_dist.png" width="500" />
 
 ## Feature Engineering
-The idea is to  group transctions by customer, and find possible combinations of **"Recency, Frequncy, Monetary"**, **time cycles** (Day of Week, Weekend or Weekdays, etc), and **category groups**. This is achieved by **3 levels of extraction stages**. First level is to simply calculate the spending sum, mean, std, etc over Jan and Feb, plus the most recent amount and the days past. Second level is to repeat the first level once sub-grouped by categories, and once sub-grouped by time cycles. The third level is to repeat the first level, sub-grouped by time cycle AND categories. **Starting with only 6 columns per transaction, now we have 7754 features (sparse) for each customer.**
+The idea is to  group transctions by customer, and find possible combinations of **"Recency, Frequncy, Monetary"**, **time cycles** (Day of Week, Weekend or Weekdays, etc), and **category groups**. This is achieved by **3 levels of extraction stages**. First level is to simply calculate the spending sum, mean, std, etc over Jan and Feb, plus the most recent amount and the days past. Second level is to repeat the first level once sub-grouped by categories, and once sub-grouped by time cycles. The third level is to repeat the first level, sub-grouped by time cycle AND categories. Starting with only **6 columns per transaction**, now we have **7754 features (sparse) for each customer.**
 Noted that we originally have 365 merchant categories, with top 20% categories represent 90% transactions. So, we keep the categories with high occurances, while furthur group the cateogories with less than 0.2% occurence with CitiGroup's standard MCC Grouping. By doing so, we reduce the categories from 365 to 120. 
 ### Citigroup's MCC Grouping
 <img src="Images/mcg_shot.png" width="1000" />
@@ -40,7 +40,7 @@ Due to the high-dimentional sparse features, we start Logistic Regression to tes
 
 <img src="Images/feature_importances.png" width="1000" />
 
-### Future Iterations
+## Future Iterations
 As shown below, predicting travelling with specific merchant is extremely imbalanced classification task. We do not continue with company-level prediction due to limited samples, computing resources and only 48 hours of time. The good news is, we design "Travel Rewards Mastercard Predictive Marketing" model in such way to allow the model to scale with input data, and has to flexibility to switch prediction of interest easily. For example, including "Day of Month" or "Hour of Day" into time cycles will contribute to additional 10,000+ features each. 
 
 ### Flight Popularity in Canada
